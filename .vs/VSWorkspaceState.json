@@ -1,0 +1,19 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\TestMatera",
+    "\\TestMatera\\src",
+    "\\TestMatera\\src\\main",
+    "\\TestMatera\\src\\main\\java",
+    "\\TestMatera\\src\\main\\java\\com.example.stepdefinitions",
+    "\\TestMatera\\src\\main\\java\\com.example.stepdefinitions\\com",
+    "\\TestMatera\\src\\main\\java\\com.example.stepdefinitions\\com\\example",
+    "\\TestMatera\\src\\main\\java\\com.example.stepdefinitions\\com\\example\\stepdefinitions",
+    "\\TestMatera\\src\\test",
+    "\\TestMatera\\src\\test\\java",
+    "\\TestMatera\\src\\test\\java\\runners",
+    "\\TestMatera\\src\\test\\resources"
+  ],
+  "SelectedNode": "\\TestMatera\\src\\test\\java\\runners\\TestRunner.java",
+  "PreviewInSolutionExplorer": false
+}

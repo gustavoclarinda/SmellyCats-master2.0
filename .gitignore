@@ -1,0 +1,11 @@
+# Build outputs
+TestMatera/target/
+
+# Node dependencies
+TestMatera/node_modules/
+
+# IDE and tooling
+TestMatera/.classpath
+TestMatera/.project
+TestMatera/.settings/
+TestMatera/.vscode/

@@ -1,0 +1,35 @@
+name: Test suite
+
+on:
+  pull_request:
+  push:
+    branches: ["main", "master", "work"]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: TestMatera
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+          cache: 'maven'
+
+      - name: Run test suite
+        run: mvn -B test
+
+      - name: Upload test reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: maven-test-reports
+          path: |
+            TestMatera/target/surefire-reports
+            TestMatera/target/cucumber-reports
+          if-no-files-found: warn
